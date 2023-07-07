@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Varela+Round&display=swap');
+/* header.css */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+  a, a:link, a:visited{
+    color:inherit;
+    text-decoration:none;
+  }
+  li{
+    list-style:none;
+  }
+  
+
+  #Index_main.container{
+    width:1000px;
+    margin:0 auto;
+
+
+  }
+  header{
+    position:fixed;
+    color:white;
+    top:0;
+    z-index:1;
+    width:100%;
+    padding:1rem;
+  }
+  header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
+  }
+  header nav ul{
+    display:flex;
+  }
+  header nav ul li{
+    padding:10px;
+  }
+  header button{
+    background: transparent;
+    border:0;
+    cursor: pointer;
+    color:white; 
+  }
+  header h1 button{
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  header nav ul li button{
+    font-size: 1.2rem;
+  }
+  /* End header.css */
+  /* main.css */
+  main{
+    width:100%;
+    height:100vh;
+    color:white;
+    background:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('images/seven.png') center center;
+
+    background-size:cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+  }
+ 
+  main h4{
+    font-size:2rem;
+  }
+  main h2{
+    font-size:3.5rem;
+    margin:2rem 0;
+    letter-spacing:3px;
+    font-family:'Varela Round', sans-serif; /* 웹 폰트 추가 */
+  }
+  main p{
+    max-width:500px;
+    margin:0 auto;
+    font-size:1.25rem;
+  }
+  main button.download{
+    background-color:transparent;
+    border:3px solid white;
+    border-radius:20px;
+    padding:1rem 2rem;
+    margin-top:3rem;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+  }
+
+  main button.mouse{
+    background-color:transparent;
+    border:none;
+    color:white;
+    font-size:2rem;
+    position:absolute;
+    bottom:1rem;
+    left:50%;
+    transform:translateX(-50%);
+    animation:upDown 1s ease-in-out infinite;
+    cursor:pointer;
+  }
+
+
+  main button.NEXT{
+    background-color:transparent;
+    border:3px solid white;
+    border-radius:20px;
+    padding:1rem 2rem;
+    color:white;
+    font-size:2rem;
+    position:absolute;
+    bottom:1rem;
+    left:50%;
+    transform:translateX(-50%);
+    /*animation:upDown 1s ease-in-out infinite;*/
+    cursor:pointer;
+  }
+  @keyframes upDown{
+    0%{
+      bottom:1rem;
+    }
+    50%{
+      bottom:1.5rem;
+    }
+    100%{
+      bottom:1rem;
+    }
+  }
+  main h2 span::after{
+    content:"";
+    height:40px;
+    width:3px;
+    background-color:#fff;
+    display:inline-block;
+    animation: blink .7s ease-in-out infinite;
+  }
+  @keyframes blink {
+    0%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
+    }
+  }
+
+
+  header.active{
+    background-color:rgba(0,0,0);
+    animation:fadeIn 0.5s ease-in-out;
+  }
+  /* main.css */
+
+  /* Index_sub.css */
+
+  #Index_sub1_head{    
+    padding:1rem;
+    background-color: black;
+  }
+  
+  #Index_sub1_body{
+    background-color: black;
+  }
+
+  #grid{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    margin:4rem 0;
+
+    height:200vh ;
+    
+     
+  }
+  #grid #navi{
+    background-color: #2e3337;
+  }
+
+  #grid #navi ul{
+   padding-top: 40px;
+   padding-left: 20px;
+   position: fixed;
+      
+  }
+  #grid #navi ul li{
+   display: block;
+   padding-bottom: 60px;
+   font-size: 20px;
+   color: #dde3e7;
+   width: 180px;
+   padding-left: 20px;
+   line-height: 50px;
+   opacity: 1;
+   transition: padding 0.5s ease, opacity 0.5s 
+  }
+
+  #grid  #article{
+    background-color: white;
+  }
+
+  #grid  #article{
+    padding-top: 40px;
+    padding-left: 100px;
+  }
+ 
+
+  #grid  #article  img{
+    width:600px;
+    padding-right: 50px;
+    float:left;
+  }
+
+  
+
+  
+
+
+
+  
+  select{
+    padding-bottom: 30px;
+  }
+  
+  #Introduce > h2{
+    padding-bottom: 2rem;
+  }
+  
+  #Introduce::after{
+    margin-bottom: 100px;
+    content:"";
+    clear:both;
+    display:block;
+  }
+
+  #Business > h2{
+    padding-bottom: 2rem;
+  }
+  #Business::after{
+    margin-bottom: 100px;
+    content:"";
+    clear:both;
+    display:block;
+  }
+
+  #Devolop > h2{
+    padding-bottom: 2rem;
+  }
+  #Devolop::after{
+    margin-bottom: 100px;
+    content:"";
+    clear:both;
+    display:block;
+  } 
+
+  #Contact > h2{
+    padding-bottom: 2rem;
+  }
+  #Contact::after{
+    margin-bottom: 100px;
+    content:"";
+    clear:both;
+    display:block;
+  } 
+
+
+
+/* Contact_with_me.css */
+section.Contact .Contact-me .left{
+  width:30%;
+  float:left;
+}
+section.Contact .Contact-me .right{
+  float:left;
+  width:65%;
+  margin-left:5%;
+}
+section.Contact .Contact-me .left .card{
+  border:1px solid #ccc;
+  padding:1rem;
+  display:flex;
+  align-items:center;
+  margin-bottom:1.25rem;
+}
+section.Contact .Contact-me .left .card .icon i{
+  font-size:2rem;
+  margin-right:15px;
+}
+section.Contact .Contact-me .right{ 
+  float:left;
+  width:65%;
+  margin-left:5%;
+  margin-bottom:2rem;
+  border:1px solid #ccc;
+  padding:1rem;
+}
+/* form-group 사이 간격 지정 */
+section.Contact .Contact-me .right .form-group{
+  margin-bottom:1.25rem;
+}
+/* label 태그가 인라인 성격이어서 외부 여백을 적용하기 위해 block으로 변경 */
+section.Contact .Contact-me .right .form-group label{
+  display:block;
+  margin-bottom:0.85rem;
+}
+/* input 요소 꾸미기 */
+section.Contact .Contact-me .right .form-group input{
+  padding:0.625rem;
+  width:100%;
+  outline:none;
+  border:1px solid #ccc;
+  border-radius:10px;
+}
+/* :focus 가상 클래스 선택자로 입력 요소에 커서가 활성화되면 파란색 테두리와 그림자 효과 추가 */ 
+section.Contact .Contact-me .right .form-group input:focus{
+  border:1px solid #719ECE;
+  box-shadow:0 0 10px #719ECE;
+}
+/* textarea 요소 꾸미기 */
+section.Contact .Contact-me .right .form-group textarea{
+  height:300px;
+  width:100%;
+  resize:none;
+  border:1px solid #ccc;
+  border-radius:10px;
+}
+/* textarea 요소에 커서 활성화가 되면 파란색 테두리와 그림자 효과 추가 */
+section.Contact .Contact-me .right .form-group textarea:focus{
+  outline:none;
+  border:1px solid #719ECE;
+  box-shadow:0 0 10px #719ECE;
+}
+/* 버튼 요소 꾸미기 */
+section.Contact .Contact-me .right button{
+  width:100%;
+  padding:1rem;
+  background-color:#f78b00;
+  border:none;
+  color:white;
+}
+
+section.Contact .Contact-me .right{
+  width: 30%;
+}
+ 
+/* End Contact_with_me.css */
+ 
+  /* End Index_sub.css */
